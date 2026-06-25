@@ -2,6 +2,33 @@
 
 [中文](#中文) | [English](#english)
 
+## 一分钟使用 / One-minute Usage
+
+### 不安装，直接扫描 / Scan without installing
+
+```bash
+npx --yes github:hikitty2/codex-session-recovery --out codex-session-recovery-report.md
+```
+
+### 安装 Codex Skill / Install the Codex Skill
+
+```bash
+npx --yes --package github:hikitty2/codex-session-recovery codex-session-recovery-install-skill
+```
+
+### 本地开发 / Local development
+
+```bash
+git clone https://github.com/hikitty2/codex-session-recovery.git
+cd codex-session-recovery
+npm run scan
+npm run install-skill
+```
+
+安全默认值：扫描器只读，不会修改 JSONL、SQLite 或 `config.toml`。
+
+Safety default: the scanner is read-only. It does not edit JSONL, SQLite, or `config.toml`.
+
 ## 中文
 
 一个只读的 Codex 会话恢复扫描器，同时提供可安装的 Codex Skill。

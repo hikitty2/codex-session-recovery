@@ -4,10 +4,11 @@
   "description": "Read-only Codex session recovery scanner plus installable Codex Skill.",
   "type": "module",
   "bin": {
-    "codex-session-recovery": "./bin/codex-session-recovery.mjs"
+    "codex-session-recovery": "./bin/codex-session-recovery.mjs",
+    "codex-session-recovery-install-skill": "./bin/codex-session-recovery-install-skill.mjs"
   },
   "scripts": {
-    "check": "node --check bin/codex-session-recovery.mjs && node --check scripts/install-skill.mjs && node --check skills/codex-session-recovery/scripts/recovery-runner.mjs",
+    "check": "node --check bin/codex-session-recovery.mjs && node --check bin/codex-session-recovery-install-skill.mjs && node --check scripts/install-skill.mjs && node --check skills/codex-session-recovery/scripts/recovery-runner.mjs",
     "scan": "node bin/codex-session-recovery.mjs --out codex-session-recovery-report.md --json-out codex-session-recovery-report.json",
     "install-skill": "node scripts/install-skill.mjs"
   },
