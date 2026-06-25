@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Session Recovery"
+  short_description: "Recover hidden Codex threads"
+  default_prompt: "恢复本机 Codex 旧会话，检查 ~/.codex/sessions、SQLite、config.toml 和 provider metadata，并输出恢复结果。"

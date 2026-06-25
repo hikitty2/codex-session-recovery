@@ -1,0 +1,7 @@
+node_modules/
+*.log
+codex-session-recovery-report.md
+codex-session-recovery-report.json
+.DS_Store
+dist/
+coverage/
